@@ -9,9 +9,11 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				background: "hsl(var(--background))",
-				accent: "hsl(var(--accent))",
-				text: "hsl(var(--text))",
+				background: "#fff9e0",
+				primary: "#ffd500",
+				secondary: "#FFEA76",
+				text: "#3c0e01",
+				text2: "#333300",
 			},
 		},
 	},

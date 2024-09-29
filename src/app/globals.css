@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --gradientColor {
+	syntax: "<color>";
+	inherits: false;
+	initial-value: white;
+}
+
 :root {
 	--background: 48, 100%, 94%;
-	--accent: 50, 100%, 50%;
+	--primary: 50, 100%, 50%;
+	--secondary: 50, 100%, 73%;
 	--text: 13, 97%, 12%;
+	--text-2: 60, 100%, 20%;
+}
+
+* {
+	/* outline: solid; */
 }
 
 body {
