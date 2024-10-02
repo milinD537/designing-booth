@@ -29,3 +29,10 @@ body {
 		text-wrap: balance;
 	}
 }
+
+@keyframes slideIn {
+	to {
+		transform: translate(var(--x, 0), var(--y, 0));
+		opacity: 1;
+	}
+}
