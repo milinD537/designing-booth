@@ -6,7 +6,6 @@ import {
 	ThreeD,
 	VideoEditing,
 } from "@/assets/svgs"
-import { cn } from "@/lib/utils"
 import React from "react"
 
 function ServiceCard({
