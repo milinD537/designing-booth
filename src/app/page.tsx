@@ -1,27 +1,6 @@
-import {
-	DigitalMarketing,
-	GraphicDesigning,
-	PhotoVideo,
-	SocialMediaMarketing,
-	ThreeD,
-	VideoEditing,
-} from "@/assets/svgs"
+import Services from "@/components/services"
 import React from "react"
 
-function ServiceCard({
-	service,
-	Icon,
-}: {
-	service: string
-	Icon: React.ReactNode
-}) {
-	return (
-		<div className="grid justify-items-center gap-12 px-12 py-24 rounded-lg bg-[linear-gradient(135deg,white,var(--gradientColor))] hover:[--gradientColor:hsl(var(--secondary))] hover:rotate-0 transition-[transform,--gradientColor] duration-300 shadow-[7px_82px_50px_hsl(0,0%,0%,5%),3px_36px_37px_hsl(0,0%,0%,9%),1px_9px_20px_hsl(0,0%,0%,10%)]">
-			{Icon}
-			<h4 className="text-2xl font-bold text-center">{service}</h4>
-		</div>
-	)
-}
 function ClientImg({ src }: { src: string }) {
 	return (
 		<img
@@ -33,44 +12,6 @@ function ClientImg({ src }: { src: string }) {
 }
 
 export default function Home() {
-	const servicesArray = [
-		{
-			service: "Video Editing",
-			icon: (
-				<VideoEditing className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-		{
-			service: "Social Media Marketing",
-			icon: (
-				<SocialMediaMarketing className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-		{
-			service: "Photography & Videography",
-			icon: (
-				<PhotoVideo className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-		{
-			service: "Graphic Designing",
-			icon: (
-				<GraphicDesigning className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-		{
-			service: "3D Modelling & Animation",
-			icon: (
-				<ThreeD className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-		{
-			service: "Digital Marketing",
-			icon: (
-				<DigitalMarketing className="opacity-50 w-full h-full max-h-32 max-w-32" />
-			),
-		},
-	]
 	const clientImages = [
 		"/images/c1.webp",
 		"/images/c2.webp",
@@ -94,15 +35,16 @@ export default function Home() {
 					<div className="self-end">
 						<h1 className="overflow-hidden pt-5 text-[clamp(2.75rem,7vw_+_1px,6rem)] font-extrabold text-center leading-tight">
 							<span className="inline-block -translate-y-[calc(100%_+_1.25rem)] animate-[slideIn_750ms_forwards]">
-								<span className="relative | after:content-['*'] after:absolute after:text-primary after:text-[clamp(4rem,7vw+1px,7rem)] after:font-black after:right-0 after:-translate-y-7 after:translate-x-1/2">
-									Designing
+								<span className="relative | after:hidden after:content-['*'] after:absolute after:text-primary after:text-[clamp(4rem,7vw+1px,7rem)] after:font-black after:right-0 after:-translate-y-7 after:translate-x-1/2">
+									OctoReach
 								</span>{" "}
-								Booth
+								{/* Booth */}
 							</span>
 						</h1>
 						<h2 className="overflow-hidden text-lg font-medium text-center">
 							<span className="inline-block -translate-y-full animate-[slideIn_750ms_forwards]">
-								Designing your digital dreams to reality
+								{/* Designing your digital dreams to reality */}
+								Crafting Stories, Driving Results.
 							</span>
 						</h2>
 						<div className="mt-3 px-[1px] overflow-hidden w-fit mx-auto hover:-translate-y-1 active:translate-y-0 transition-transform">
@@ -130,19 +72,8 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="servicesWrapper | mt-28">
-				<h3 className="text-4xl lg:text-5xl font-black text-text uppercase text-center">
-					our services
-				</h3>
-				<div className="serviceCardContainer | mt-12 py-4 grid gap-8 justify-center min-[900px]:[--repeat:3] grid-cols-[repeat(var(--repeat,auto-fill),minmax(200px,300px))]">
-					{servicesArray.map((item, idx) => (
-						<ServiceCard
-							key={idx}
-							service={item.service}
-							Icon={item.icon}
-						/>
-					))}
-				</div>
+			<section className="servicesWrapper | mt-28 lg:px-12">
+				<Services />
 			</section>
 			<section className="aboutWrapper | mt-28 px-6 py-12 lg:py-24 bg-gradient-to-b from-[#5B5B5B] to-[#353535]">
 				<div className="about-us | max-w-screen-2xl mx-auto grid gap-6 lg:grid-cols-2 lg:grid-flow-col-dense">

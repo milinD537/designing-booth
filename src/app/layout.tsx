@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import localFont from "next/font/local"
 import "./globals.css"
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/navbar"
 
 const trap = localFont({
 	src: [
@@ -38,7 +38,7 @@ const trap = localFont({
 })
 
 export const metadata: Metadata = {
-	title: "Designing Booth",
+	title: "Octoreach Digital",
 	description: "Designing your digital dreams to reality",
 }
 
