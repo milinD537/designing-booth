@@ -61,17 +61,17 @@ export default function Services() {
 		},
 	]
 	return (
-		<div className="bg-[linear-gradient(to_bottom,#5D5BBD,#2B2A57_65%)] p-10 lg:py-16 rounded-t-3xl lg:rounded-3xl text-background">
+		<div className="bg-gradient-to-r from-primary to-[#F0A91A] p-10 lg:py-16 rounded-t-3xl lg:rounded-3xl text-[#3D0E01]">
 			<h3 className="text-4xl lg:text-7xl font-bold uppercase text-center">
 				our services
 			</h3>
-			<p className="mt-4 lg:text-xl text-center ~max-w-[30ch] lg:leading-normal">
+			<p className="mt-4 lg:text-xl font-semibold text-center lg:leading-normal">
 				At OctoReach, we specialize in a diverse range of digital
 				marketing services <br className="hidden lg:block" /> designed
 				to elevate your brand and achieve your business goals. <br />{" "}
 				Explore how we can help you thrive in the digital landscape:
 			</p>
-			<div className="serviceCardContainer | mt-12 py-4 grid gap-8 justify-center ~min-[900px]:[--repeat:4] grid-cols-[repeat(var(--repeat,auto-fill),minmax(min(384px,100%),1fr))]">
+			<div className="serviceCardContainer | text-background mt-12 py-4 grid gap-8 justify-center ~min-[900px]:[--repeat:4] grid-cols-[repeat(var(--repeat,auto-fill),minmax(min(384px,100%),1fr))]">
 				{servicesArray.map((item, idx) => (
 					<ServiceCard
 						key={idx}

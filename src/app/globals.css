@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* weight range --> 200-1000 */
+.font-mulish {
+	font-family: "Mulish", sans-serif;
+	font-optical-sizing: auto;
+}
+
 @property --gradientColor {
 	syntax: "<color>";
 	inherits: false;
@@ -9,11 +16,10 @@
 }
 
 :root {
-	--background: 48, 100%, 94%;
-	--primary: 50, 100%, 50%;
-	--secondary: 50, 100%, 73%;
-	--text: 13, 97%, 12%;
-	--text-2: 60, 100%, 20%;
+	--background: 240 100% 97%;
+	--text: 240 36% 16%;
+	--primary: 51 88% 55%;
+	--secondary: 240 22% 27%;
 }
 
 * {
