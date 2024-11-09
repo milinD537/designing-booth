@@ -3,7 +3,7 @@ import Services from "@/components/services"
 export default function services() {
   return (
     <div>
-      <section className="servicesWrapper | ~mt-28p pt-28 lg:px-12">
+      <section className="servicesWrapper | -mt-20 ~mt-28p pt-28 lg:px-12">
         <Services />
         <iframe
           width="100%"
