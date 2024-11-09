@@ -9,7 +9,7 @@ function NavLink({ name, active }: { name: string; active?: boolean }) {
 			)}
 			<span
 				className={`text-lg font-bold text-text ${
-					!active && "text-opacity-65"
+					!active && "text-opacity-65 font-medium"
 				}`}
 			>
 				{name}
@@ -20,7 +20,10 @@ function NavLink({ name, active }: { name: string; active?: boolean }) {
 
 export default function Navbar() {
 	return (
-		<nav className="hidden lg:block fixed top-4 z-50 left-1/2 -translate-x-1/2 w-max mx-auto ~my-8 bg-white px-9 py-4 rounded-full shadow-[0_4px_1.5rem_hsl(0,0%,0%,10%)]">
+		<nav className="hidden lg:flex justify-between w-full fixed ~top-4 z-50 ~left-1/2 ~-translate-x-1/2 ~w-max ~mx-auto bg-white px-9 rounded-b-lg shadow-[0_4px_1.5rem_hsl(0,0%,0%,20%)]">
+			<div className="logoWrapper | max-w-20">
+				<img src="/images/logo.png" alt="" />
+			</div>
 			<ul className="flex items-center justify-between gap-8">
 				<li>
 					<NavLink name="Home" active />

@@ -14,20 +14,20 @@ function ClientImg({ src }: { src: string }) {
 export default function Home() {
 	const clientImages = [
 		"/images/c1.webp",
-		"/images/c2.webp",
-		"/images/c3.webp",
-		"/images/c4.webp",
-		"/images/c5.webp",
-		"/images/c6.webp",
+		// "/images/c2.webp",
+		// "/images/c3.webp",
+		// "/images/c4.webp",
+		// "/images/c5.webp",
+		// "/images/c6.webp",
 		"/images/c7.webp",
-		"/images/c8.webp",
+		// "/images/c8.webp",
 		"/images/c9.webp",
 		"/images/c10.webp",
 	]
 
 	return (
 		<div className="landingWrapper">
-			<section className="heroWrapper | py-16 relative isolate overflow-hidden min-h-screen grid gap-12 lg:content-end bg-gradient-to-b from-[#FFF091] to-[#FFFFB700]">
+			<section className="heroWrapper | py-20 relative isolate overflow-hidden min-h-screen grid gap-12 lg:content-end bg-gradient-to-b from-[#FFF091] to-[#FFFFB700]">
 				<div className="ray | absolute -z-10 bg-gradient-to-l from-[#FF7A00] to-[#FF881B44] w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,50px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[15deg]"></div>
 				<div className="ray | absolute -z-10 bg-gradient-to-l from-[#FF7A00] to-[#FF881B44] w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,50px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[45deg]"></div>
 				<div className="ray | absolute -z-10 bg-gradient-to-l from-[#FF7A00] to-[#FF881B44] w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,50px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[70deg]"></div>
@@ -54,12 +54,11 @@ export default function Home() {
 					<img
 						src="/images/hero-stat-1.png"
 						alt=""
-						className="-translate-x-1/2 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
+						className="self-end -translate-x-1/2 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
 					/>
 					<iframe
 						src="https://www.youtube.com/embed/79-eKiehLIw"
 						title="J. Cole - p u n c h i n &#39; . t h e . c l o c k (Official Music Video)"
-						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						referrerPolicy="strict-origin-when-cross-origin"
 						allowFullScreen
@@ -68,7 +67,7 @@ export default function Home() {
 					<img
 						src="/images/hero-stat-2.png"
 						alt=""
-						className="translate-x-1/2 opacity-0 animate-[slideIn_750ms_forwards]"
+						className="self-end translate-x-1/2 opacity-0 animate-[slideIn_750ms_forwards]"
 					/>
 				</div>
 			</section>
