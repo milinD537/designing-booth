@@ -20,6 +20,9 @@
 	--text: 240 36% 16%;
 	--primary: 51 88% 55%;
 	--secondary: 240 22% 27%;
+
+	scroll-behavior: smooth;
+	scroll-padding-top: 8rem;
 }
 
 * {

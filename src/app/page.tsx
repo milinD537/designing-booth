@@ -49,7 +49,10 @@ export default function Home() {
 	return (
 		<div className="landingWrapper">
 			<div className="pb-20 bg-gradient-to-b from-background to-[#909099]">
-				<section className="heroWrapper | py-20 relative isolate overflow-hidden min-h-screen grid gap-12 lg:content-end ~bg-gradient-to-b from-background to-background/0">
+				<section
+					id="home"
+					className="heroWrapper | py-20 relative isolate overflow-hidden min-h-screen grid gap-12 lg:content-end ~bg-gradient-to-b from-background to-background/0"
+				>
 					<div className="ray | absolute -z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[15deg]"></div>
 					<div className="ray | absolute -z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[45deg]"></div>
 					<div className="ray | absolute -z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[70deg]"></div>
@@ -101,11 +104,17 @@ export default function Home() {
 						/>
 					</div>
 				</section>
-				<section className="servicesWrapper | mt-28 lg:px-12">
+				<section
+					id="services"
+					className="servicesWrapper | mt-28 lg:px-12"
+				>
 					<Services />
 				</section>
 			</div>
-			<section className="aboutWrapper | ~mt-28 px-6 py-24 lg:py-40 bg-gradient-to-b from-secondary to-text">
+			<section
+				id="aboutus"
+				className="aboutWrapper | ~mt-28 px-6 py-24 lg:py-40 bg-gradient-to-b from-secondary to-text"
+			>
 				<div className="about-us | max-w-screen-2xl mx-auto grid gap-12 lg:grid-cols-2 lg:grid-flow-col-dense">
 					<div className="aspect-video self-center">
 						{/* <div className="h-full border-4 lg:border-[12px] border-primary rounded-[1.375rem] bg-background shadow-inner"> */}
@@ -149,7 +158,10 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="whyUsWrapper | grid *:[grid-area:1/-1] place-items-center py-24 lg:py-40 bg-gradient-to-b from-secondary to-[#808080] to-[150%]">
+			<section
+				id="whyus"
+				className="whyUsWrapper | grid *:[grid-area:1/-1] place-items-center py-24 lg:py-40 bg-gradient-to-b from-secondary to-[#808080] to-[150%]"
+			>
 				<WorldMap className="w-full ~mx-auto" />
 				<div className="max-w-screen-xl ~bg-white p-6">
 					<h3 className="text-center text-4xl lg:text-5xl font-black text-primary">
@@ -172,7 +184,10 @@ export default function Home() {
 					</ul>
 				</div>
 			</section>
-			<section className="clientsWrapper | mt-16 px-3 lg:px-6 py-24">
+			<section
+				id="clients"
+				className="clientsWrapper | mt-16 px-3 lg:px-6 py-24"
+			>
 				<h3 className="text-4xl lg:text-5xl font-black text-text text-center">
 					Meet our Clients
 				</h3>
@@ -187,7 +202,7 @@ export default function Home() {
 					))}
 				</div>
 			</section>
-			<section className="worksSection | mt-28 p-2">
+			<section id="ourwork" className="worksSection | mt-28 p-2">
 				<Work />
 			</section>
 		</div>
