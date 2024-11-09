@@ -16,7 +16,7 @@ export default function services() {
             md:h-[700px]
             lg:rounded-3xl 
             md:mt-10
-            bg-[url(/images/noise.webp),linear-gradient(to_bottom,#2B2A57,#2B2A57_65%)]
+            bg-gradient-to-r from-primary to-[#F0A91A]
           "
           src="https://bento.me/octoreach"
           title="Octoreach services"
