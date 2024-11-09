@@ -6,7 +6,7 @@ function ServiceCard({
 	description: string
 }) {
 	return (
-		<div className="group p-4 content-end bg-[url(/images/service-card-bg.webp)] bg-center bg-cover aspect-square rounded-3xl relative isolate z-0 ~overflow-hidden | before:rounded-[inherit] before:absolute before:inset-0 before:-z-10 before:bg-black before:bg-opacity-45 hover:before:bg-opacity-55 before:backdrop-blur-[0.5px] hover:before:backdrop-blur before:transition-[background-color,backdrop-filter] before:duration-300">
+		<div className="group p-4 content-end bg-[url(/images/service-card-bg.webp)] bg-center bg-cover aspect-square rounded-3xl relative isolate z-0 ~overflow-hidden | before:rounded-[inherit] before:absolute before:inset-0 before:-z-10 before:bg-black before:bg-opacity-45 hover:before:bg-opacity-65 before:backdrop-blur-[0.5px] hover:before:backdrop-blur before:transition-[background-color,backdrop-filter] before:duration-300">
 			<h4 className="text-2xl lg:text-4xl font-semibold">{service}</h4>
 			<div className="description | grid grid-rows-[0fr] group-hover:grid-rows-[1fr] [transition:grid-template-rows_500ms] will-change-[grid-template-columns]">
 				<p className="overflow-hidden text-sm lg:text-lg opacity-0 group-hover:opacity-100 transition-opacity duration-1000 lg:leading-loose">

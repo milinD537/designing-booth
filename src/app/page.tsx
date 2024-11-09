@@ -81,17 +81,10 @@ export default function Home() {
 							alt=""
 							className="self-end -translate-x-1/2 lg:[--x:25%] z-10 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
 						/>
-						{/* <iframe
-							src="https://www.youtube.com/embed/79-eKiehLIw"
-							title="J. Cole - p u n c h i n &#39; . t h e . c l o c k (Official Music Video)"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-							referrerPolicy="strict-origin-when-cross-origin"
-							allowFullScreen
-							className="hover:z-20 w-full aspect-video place-self-center col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem]"
-						></iframe> */}
+						{/* hover:z-20 w-full aspect-video place-self-center col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem] */}
 						<iframe
-							src="https://www.youtube.com/embed/yrLAAWxnExE"
-							title="Introducing Designing Booth logo | Digital Marketing Agency |"
+							src="https://www.youtube.com/embed/2Z9V_hfwvns"
+							title="Take Your Business to New Heights with Octoreach Digital"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
