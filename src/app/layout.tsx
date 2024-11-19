@@ -53,6 +53,11 @@ export default function RootLayout({
 				className={`${trap.className} antialiased bg-background text-text`}
 			>
 				<Navbar />
+				{/* <div className="relative overflow-x-clip">
+					<div className="ray | absolute ~z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[15deg]"></div>
+					<div className="ray | absolute ~z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[45deg]"></div>
+					<div className="ray | absolute ~z-10 bg-secondary/40 w-full lg:w-3/4 aspect-[12.4] rounded-[100%] blur-[clamp(12px,2.2vw,40px)] right-0 top-0 translate-x-1/2 -translate-y-1/2 -rotate-[70deg]"></div>
+				</div> */}
 				{children}
 			</body>
 		</html>

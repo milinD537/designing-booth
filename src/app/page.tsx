@@ -7,8 +7,8 @@ function ClientImg({ src }: { src: string }) {
 	return (
 		<img
 			src={src}
-			alt="client logo"
-			className="[object-fit:125%] object-center w-full h-full"
+			alt="octoreach client logo"
+			className="max-w-[30vw] lg:max-w-[15vw] shadow-lg object-center w-full h-full"
 		/>
 	)
 }
@@ -77,7 +77,7 @@ export default function Home() {
 					</div>
 					<div className="grid grid-cols-2 lg:grid-cols-[auto_minmax(350px,768px)_auto] ~gap-2 ~lg:gap-8 justify-items-center px-2">
 						<img
-							src="/images/hero-stat-1.png"
+							src="/images/hero-stat-1.webp"
 							alt=""
 							className="self-end -translate-x-1/2 lg:[--x:25%] z-10 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
 						/>
@@ -91,7 +91,7 @@ export default function Home() {
 							className="hover:z-20 w-full aspect-video place-self-center col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem]"
 						></iframe>
 						<img
-							src="/images/hero-stat-2.png"
+							src="/images/hero-stat-2.webp"
 							alt=""
 							className="self-end translate-x-1/2 lg:[--x:-25%] z-10 opacity-0 animate-[slideIn_750ms_forwards]"
 						/>
@@ -153,7 +153,7 @@ export default function Home() {
 			</section>
 			<section
 				id="whyus"
-				className="whyUsWrapper | grid *:[grid-area:1/-1] place-items-center py-24 lg:py-40 bg-gradient-to-b from-secondary to-[#808080] to-[150%]"
+				className="whyUsWrapper | grid *:[grid-area:1/-1] place-items-center py-24 lg:py-40 bg-gradient-to-t from-secondary ~to-[#808080] to-text ~to-[150%]"
 			>
 				<WorldMap className="w-full ~mx-auto" />
 				<div className="max-w-screen-xl ~bg-white p-6">
@@ -184,13 +184,25 @@ export default function Home() {
 				<h3 className="text-4xl lg:text-5xl font-black text-text text-center">
 					Meet our Clients
 				</h3>
-				<div className="client-images | group mt-5 max-w-screen-2xl mx-auto grid gap-4 justify-center grid-cols-[repeat(auto-fit,minmax(150px,1fr))] lg:grid-cols-[repeat(auto-fit,calc(20%_-_1rem))]">
-					{clientImages.map((item, idx) => (
+				<div className="client-images | grid gap-12 mt-10 ~max-w-screen-2xl ~mx-auto relative | after:absolute after:inset-0 after:bg-[linear-gradient(to_right,hsl(var(--background)),transparent_15%_85%,hsl(var(--background)))]">
+					{Array.from({ length: 2 }).map((_, root_idx) => (
 						<div
-							key={idx}
-							className="group-has-[:hover]:[&:not(:hover)]:scale-90 group-has-[:hover]:[&:not(:hover)]:grayscale transition-[transform,filter] duration-500"
+							key={root_idx}
+							className="flex gap-4 overflow-x-clip "
 						>
-							<ClientImg src={item} />
+							{Array.from({ length: 2 }).map((_, idx) => (
+								<div
+									key={idx}
+									className={`shrink-0 flex gap-4 [--x:calc((100%_+_1rem)*-1)] animate-[slideIn_40s_linear_infinite] ${
+										root_idx == 1 &&
+										"[animation-direction:reverse]"
+									}`}
+								>
+									{clientImages.map((item, idx) => (
+										<ClientImg key={idx} src={item} />
+									))}
+								</div>
+							))}
 						</div>
 					))}
 				</div>

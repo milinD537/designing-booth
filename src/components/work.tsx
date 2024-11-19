@@ -1,7 +1,3 @@
-// function Tab({ name }: { name: string }) {
-// 	return <button className="text-sm lg:text-lg font-semibold">{name}</button>
-// }
-
 export default function Work() {
 	return (
 		<div>
@@ -31,7 +27,7 @@ export default function Work() {
 				<h4 className="mt-6 text-3xl font-semibold px-2 border-l-4 border-primary">
 					Photoshoots
 				</h4>
-				<div className="mt-2 columns-2 lg:columns-3 gap-4 [&>*:not(:first-child)]:mt-4  *:rounded-md *:shadow-lg">
+				<div className="mt-2 grid grid-cols-2 lg:grid-cols-3 gap-4 ~[&>*:not(:first-child)]:mt-4 *:rounded-md *:shadow-lg *:aspect-square *:object-cover">
 					<img src="/images/photoshoots/1.webp" alt="" />
 					<img src="/images/photoshoots/2.webp" alt="" />
 					<img src="/images/photoshoots/3.webp" alt="" />
