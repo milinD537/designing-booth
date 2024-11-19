@@ -75,11 +75,11 @@ export default function Home() {
 							</button>
 						</div>
 					</div>
-					<div className="grid grid-cols-2 lg:grid-cols-[auto_minmax(350px,768px)_auto] ~gap-2 ~lg:gap-8 justify-items-center px-2">
+					<div className="grid ~grid-cols-2 lg:grid-cols-[auto_minmax(350px,768px)_auto] ~gap-2 ~lg:gap-8 justify-items-center px-2">
 						<img
 							src="/images/hero-stat-1.webp"
 							alt=""
-							className="self-end -translate-x-1/2 lg:[--x:25%] z-10 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
+							className="hidden lg:block self-end -translate-x-1/2 lg:[--x:25%] z-10 opacity-0 animate-[slideIn_750ms_forwards] row-start-2 lg:row-start-1"
 						/>
 						{/* hover:z-20 w-full aspect-video place-self-center col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem] */}
 						<iframe
@@ -88,12 +88,12 @@ export default function Home() {
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 							referrerPolicy="strict-origin-when-cross-origin"
 							allowFullScreen
-							className="hover:z-20 w-full aspect-video place-self-center col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem]"
+							className="hover:z-20 w-full aspect-video lg:place-self-center ~col-span-2 lg:col-span-1 opacity-0 animate-[slideIn_750ms_250ms_forwards] border-8 border-primary rounded-[1.375rem]"
 						></iframe>
 						<img
 							src="/images/hero-stat-2.webp"
 							alt=""
-							className="self-end translate-x-1/2 lg:[--x:-25%] z-10 opacity-0 animate-[slideIn_750ms_forwards]"
+							className="hidden lg:block self-end translate-x-1/2 lg:[--x:-25%] z-10 opacity-0 animate-[slideIn_750ms_forwards]"
 						/>
 					</div>
 				</section>
