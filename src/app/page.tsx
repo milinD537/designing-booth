@@ -193,7 +193,7 @@ export default function Home() {
 							{Array.from({ length: 2 }).map((_, idx) => (
 								<div
 									key={idx}
-									className={`shrink-0 flex gap-4 [--x:calc((100%_+_1rem)*-1)] animate-[slideIn_40s_linear_infinite] ${
+									className={`shrink-0 flex gap-4 [--x:calc((100%_+_1rem)*-1)] animate-[slideIn_30s_linear_infinite] ${
 										root_idx == 1 &&
 										"[animation-direction:reverse]"
 									}`}
