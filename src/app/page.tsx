@@ -210,7 +210,7 @@ export default function Home() {
 					))}
 				</div>
 			</section>
-			<section id="ourwork" className="worksSection | mt-28 p-2">
+			<section id="ourwork" className="worksSection | mt-28 p-2 pb-20">
 				<Work />
 			</section>
 		</main>

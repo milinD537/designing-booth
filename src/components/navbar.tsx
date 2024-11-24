@@ -15,7 +15,7 @@ function NavLink({ name, active }: { name: string; active?: boolean }) {
 				<span className="activeCircle | inline-block w-2 h-2 bg-primary rounded-full -translate-y-1/3 blur-[1px]"></span>
 			)}
 			<span
-				className={`text-lg font-semibold hover:bg-primary/50 transition-colors p-2 rounded-lg text-text leading-none ${
+				className={`lg:text-lg font-semibold hover:bg-primary/50 transition-colors p-2 rounded-lg text-text leading-none ${
 					!active && "~text-text/65 ~font-medium"
 				}`}
 			>

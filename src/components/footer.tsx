@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Footer() {
 	return (
-		<footer className="font-mulish | mt-20 bg-text text-background min-h-[25vh] grid pt-8 pb-16 ~border-t-2 ~border-text/20">
+		<footer className="font-mulish | ~mt-20 bg-text text-background min-h-[30vh] grid pt-8 pb-16 ~border-t-2 ~border-text/20">
 			<div className="w-[min(1440px,100%_-_1rem)] mx-auto flex gap-8 flex-wrap justify-center sm:justify-between items-start">
 				<picture className="bg-white rounded-2xl">
 					<img

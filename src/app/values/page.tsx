@@ -25,7 +25,7 @@ function Card({ item }: { item: Value | Mission | Vision }) {
 				<Icon />
 			</span>
 			<h3
-				className={`text-3xl font-semibold ${
+				className={`text-2xl lg:text-3xl font-semibold ${
 					isValue
 						? "mt-8 group-hover:text-background transition-colors"
 						: "bg-background w-fit mx-auto px-6 py-3 rounded-xl leading-none"
@@ -34,7 +34,7 @@ function Card({ item }: { item: Value | Mission | Vision }) {
 				{item.title}
 			</h3>
 			<p
-				className={`text-xl font-medium leading-normal ${
+				className={`lg:text-xl font-medium leading-normal ${
 					isValue
 						? "mt-4 group-hover:text-background transition-colors "
 						: "text-background text-center mt-8"
