@@ -22,7 +22,7 @@ export default function Work() {
 				Our Work
 			</h3>
 			<div className="tabs | max-w-screen-2xl mx-auto mt-6 ~flex gap-3 lg:gap-8 justify-center">
-				<h4 className="text-2xl font-semibold px-2 border-l-4 border-primary">
+				<h4 className="text-3xl font-semibold px-2 border-l-4 border-primary">
 					Video Editing
 				</h4>
 				<div className="mt-2 overflow-x-auto lg:overflow-visible flex lg:grid gap-4 lg:grid-cols-4 *:!rounded-md *:!shadow-md lg:*:!shadow-lg">

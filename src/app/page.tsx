@@ -1,6 +1,7 @@
 import { Check, WorldMap } from "@/assets/svgs"
 import Services from "@/components/services"
 import Work from "@/components/work"
+import Link from "next/link"
 import React from "react"
 
 function ClientImg({ src }: { src: string }) {
@@ -47,7 +48,7 @@ export default function Home() {
 	]
 
 	return (
-		<div className="landingWrapper">
+		<main className="landingWrapper">
 			<div className="pb-20 bg-gradient-to-b from-background to-[#909099]">
 				<section
 					id="home"
@@ -145,9 +146,11 @@ export default function Home() {
 							revitalize your strategy, we are here to guide you
 							every step of the way.
 						</p>
-						<button className="mt-5 text-xl font-semibold py-2 px-6 rounded-full bg-primary hover:-translate-y-1 active:translate-y-0 transition-transform">
-							KNOW MORE
-						</button>
+						<Link href="/values">
+							<button className="mt-5 text-xl font-semibold py-2 px-6 rounded-full bg-primary hover:-translate-y-1 active:translate-y-0 transition-transform">
+								KNOW MORE
+							</button>
+						</Link>
 					</div>
 				</div>
 			</section>
@@ -210,6 +213,6 @@ export default function Home() {
 			<section id="ourwork" className="worksSection | mt-28 p-2">
 				<Work />
 			</section>
-		</div>
+		</main>
 	)
 }
